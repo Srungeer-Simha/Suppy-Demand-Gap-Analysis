@@ -97,7 +97,7 @@ summary(factor(weekdays(Cab$Request.timestamp))) # Only weekday information is p
 
 # No, of days
 
-summary(factor(format(Cab$Request.timestamp, format = "%d"))) # 5 days worth of data has been given
+summary(factor(format(Cab$Request.timestamp, format = "%d"))) # 5 days worth of data 
 
 # No. of drivers
 
@@ -294,7 +294,3 @@ ggplot(aes(x = time.slot, y = value, fill = Supply.demand)) +
 #B. Increase cab search radius and add a rate multiplier so that cabs in vicinity of the airport are encouraged
 #B. to travel to the airport for pickups
 
-##################################### Exporting data for plots in tableau ##################################
-
-write.csv(Cab, "Cab.csv", row.names = F)
-write.csv(supply_demand, "supply_demand.csv", row.names = F)
